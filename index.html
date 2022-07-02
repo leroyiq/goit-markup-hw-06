@@ -84,13 +84,19 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <a href="" class="modal-close" data-modal-close>
-              <img
-                src="./images/close.svg"
-                alt="Закрыть"
-                width="11"
-                height="11"
-              />
+              <svg width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
             </a>
+            <form class="form-modal" role="group">
+              <strong class="header-form"
+                >Оставьте свои данные, мы вам перезвоним</strong
+              >
+              <label class="client-info"
+                >Имя
+                <input class="client-name" type="text" name="client-name" />
+              </label>
+            </form>
           </div>
         </div>
       </section>
@@ -561,6 +567,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe">
+          <form>
+            <h2 class="add"><strong>Подпишитесь на рассылку</strong></h2>
+            <label class="sub-label">
+              <input
+                class="sub-input"
+                type="email"
+                name="user-mail"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="sub-btn" type="submit">
+              Подписаться
+              <svg class="sub-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
