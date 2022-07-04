@@ -36,7 +36,7 @@ textarea {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .all-nav {
   display: flex;
@@ -845,14 +845,39 @@ img {
 }
 .agree {
   display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--category-search);
 }
 
+.icon-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid var(--color-text);
+  border-radius: 2px;
+  fill: var(--bgcolor);
+}
+
+.agree-check:checked + .icon-check {
+  background-color: var(--hover-focus);
+  background-origin: border-box;
+  border-color: var(--hover-focus);
+  fill: var(--bgcolor);
+}
+. .ag {
+  background-color: #188ce8;
+}
 .dogovor {
   display: inline-block;
   margin-left: 4px;
