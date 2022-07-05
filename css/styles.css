@@ -844,9 +844,9 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .agree {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
