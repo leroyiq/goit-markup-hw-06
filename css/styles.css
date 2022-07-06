@@ -204,10 +204,9 @@ textarea {
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transform: scale(1.9);
+  transform: scale(1);
 }
 
 .backdrop {
@@ -218,16 +217,10 @@ textarea {
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  visibility: visible;
   opacity: 1;
   pointer-events: all;
   transform: scale(1);
-  transition: transform 250ms var(--cubik);
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
-  opacity: 0;
+  transition: transform 250ms var(--cubik), opacity 250ms var(--cubik);
 }
 
 .modal {
@@ -243,7 +236,10 @@ textarea {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-  transition: transform 250ms var(--cubik), opacity 250ms var(--cubik);
+  transition: transform 250ms var(--cubik);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -100%) scale(0.3);
 }
 
 .modal-close {
@@ -258,6 +254,7 @@ textarea {
   background-color: var(--bgcolor);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 
   transition: fill 250ms var(--cubik);
 }
@@ -776,6 +773,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 58px;
+  margin-bottom: 10px;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
@@ -788,13 +786,8 @@ img {
   margin-bottom: 20px;
 }
 
-.form-data.feed {
-  padding-bottom: 0;
-}
-
 .client-data {
   display: inline-block;
-  margin-top: 4px;
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -829,6 +822,7 @@ img {
 
 .icon-holder {
   position: relative;
+  margin-top: 4px;
   cursor: pointer;
 }
 
