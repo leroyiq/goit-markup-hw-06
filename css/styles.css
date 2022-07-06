@@ -233,10 +233,11 @@ textarea {
 .modal {
   position: absolute;
   min-width: 528px;
-  /* height: 60vh; */
+  height: 581px;
+  padding: 40px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(1);
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -762,7 +763,6 @@ img {
 .form-modal {
   display: block;
   width: 448px;
-  margin: 40px;
 }
 .form-title {
   display: block;
@@ -775,18 +775,29 @@ img {
 .client-info {
   display: flex;
   flex-direction: column;
+  height: 58px;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--category-search);
 }
+
+.client-info.client-coment {
+  height: 138px;
+  margin-bottom: 20px;
+}
+
+.form-data.feed {
+  padding-bottom: 0;
+}
+
 .client-data {
   display: inline-block;
   margin-top: 4px;
   padding-left: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   width: 100%;
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -813,8 +824,9 @@ img {
 
 .form-data {
   position: relative;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
+
 .icon-holder {
   position: relative;
   cursor: pointer;
@@ -875,9 +887,7 @@ img {
   border-color: var(--hover-focus);
   fill: var(--bgcolor);
 }
-. .ag {
-  background-color: #188ce8;
-}
+
 .dogovor {
   display: inline-block;
   margin-left: 4px;
@@ -891,7 +901,7 @@ img {
   background-color: var(--hover-focus);
   border: 1px solid var(--hover-focus);
   border-radius: 4px;
-  padding: 10px 55px;
+  padding: 15px 59px;
   color: var(--bgcolor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -902,9 +912,6 @@ img {
 .form-submit:active {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.agree-data {
-  text-align: center;
 }
 .agree-check {
   margin-right: 7px;
